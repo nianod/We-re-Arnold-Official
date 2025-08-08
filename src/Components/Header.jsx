@@ -1,5 +1,7 @@
 import { FaPhone, FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import SideModal from "./SideModal";
 
 const navContents = {
   image: "public/pic1.png",
@@ -7,6 +9,7 @@ const navContents = {
 };
 
 const Header = () => {
+  const [sideMenu, setSideMenu] = useState(false)
   return (
     <div className="top-0 z-auto fixed w-full">
       <div className="flex  justify-between gap-1 p-3 bg-transparent bg-opacity-50 text-[#6b57d2] font-bold border-b border-gray-400">
@@ -25,12 +28,13 @@ const Header = () => {
              Contact Us <FaPhone />
           </button>
           <button className="text-white border  p-1 rounded px-3 border-gray-600 cursor-pointer hover:bg-blue-800 transition"
-            
+            onClick={() => setSideMenu(true)}
           >
             <FaBars />
           </button>
         </div>
       </div>
+      <SideModal sideMenu={sideMenu} setSideMenu={setSideMenu}/>
     </div>
   );
 };
