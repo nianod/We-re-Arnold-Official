@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 const SideModal = ({sideMenu, setSideMenu}) => {
   
   return (
-    <div>  
+    <div>
       {sideMenu && (
         <div
           className="fixed inset-0  z-40 backdrop-blur-md"
@@ -14,18 +14,30 @@ const SideModal = ({sideMenu, setSideMenu}) => {
           sideMenu ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="p-4 flex justify-between items-center">
-          <h2 className="text-green-500 text-xl font-[helvetica]">Menu</h2>
-          <button onClick={() => setSideMenu(false)} className="text-gray-300 font-bold cursor-pointer">
-            ╳
-          </button>
-        </div>
-        <div className="p-4 text-white">
-          <p><Link to="/">🏠︎ Home</Link></p>
+        <button
+          onClick={() => setSideMenu(false)}
+          className="text-gray-300 font-bold cursor-pointer top-0 absolute right-0 p-2"
+        >
+          ╳
+        </button>
+        <div className="p-5 text-white flex flex-col gap-2">
+          <h2 className="text-green-500 text-xl font-[helvetica] mt-6">Menu</h2>
+          <p className="hover:bg-gray-700 hover:transition p-3 rounded cursor-pointer" onClick={() => setSideMenu(false)}>
+            <Link to="/">🏠︎ Home</Link>
+          </p>
+          <p className="hover:bg-gray-700 hover:transition p-3 rounded cursor-pointer" onClick={() => setSideMenu(false)}>
+            <Link to="/">🛍️ Our Services</Link>
+          </p>
+          <p className="hover:bg-gray-700 hover:transition p-3 rounded cursor-pointer" onClick={() => setSideMenu(false)}>
+            <Link to="contact">⛓️‍💥 Connect with Us</Link>
+          </p>
+          <p className="hover:bg-gray-700 hover:transition p-3 rounded cursor-pointer" onClick={() => setSideMenu(false)}>
+            <Link to="/">🗑️ About Us</Link>
+          </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default SideModal
