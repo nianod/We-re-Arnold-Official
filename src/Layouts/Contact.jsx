@@ -82,7 +82,7 @@ const Contact = () => {
             className="p-2 w-50 text-white rounded-xl bg-blue-500 cursor-pointer m-auto mt-5 hover:bg-blue-400"
             type="submit"
           >
-            {sent ? "Message sent!" : "Send Message"}
+            {sent ? "Sending..." : "Send Message"}
           </button>
         </form>
       </div>

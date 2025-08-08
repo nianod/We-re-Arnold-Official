@@ -1,4 +1,5 @@
 import { FaPhone, FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const navContents = {
   image: "public/pic1.png",
@@ -15,7 +16,9 @@ const Header = () => {
             className="rounded-full h-10 -w-10"
             alt="Arnold"
           />
-          <h1>{navContents.title}</h1>
+          <Link to="/">
+          <button  className="cursor-pointer">{navContents.title}</button>
+          </Link>
         </div>
         <div className="text-white flex gap-4">
           <button className="flex items-center gap-2 border-gray-600 border font-semibold px-2 rounded p-1 cursor-pointer hover:bg-blue-800 transition">
