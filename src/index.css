@@ -5,3 +5,10 @@ body {
 .contact {
     background-color: rgb(11, 5, 70);
 }
+.clips {
+    background-image: url('public/pic1.png');
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: animate 10s linear infinite;
+}
