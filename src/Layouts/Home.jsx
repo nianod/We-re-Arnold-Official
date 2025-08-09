@@ -1,29 +1,38 @@
 import React from 'react'
 import Connect from '../Components/Connect'
 import SideModal from '../Components/SideModal'
-import { motion, useScroll } from 'motion/react'
+import { motion, useScroll } from 'framer-motion'
 
 const Home = () => {
-  const { scrollyProgress } = useScroll()
-   
+  const { scrollYProgress } = useScroll()
+
   return (
-    <div className='mt-15'>
+    <div className='mt-20'>
       <motion.div
-        id='scroll indicator'
+        id='scroll-indicator'
         style={{
-          scaleX: scrollyProgress,
+          scaleX: scrollYProgress,
           top: 0,
+          position: 'fixed',
           left: 0,
           right: 0,
-          height: 5,
+          height: 15,
           originX: 0,
-          background: 'ff0088'
+          background: '#ff0088',
+          zIndex: 10
         }}
-      ></motion.div>
+      />
       <div>
-        <h1 className='text-white'>WELCOME TO <span>We're Arnold's Tech</span></h1>
-
+        <h1 className='text-white text-xl text-center'>
+          WELCOME TO
+          <span className='text-white text-xl bg-[red] rounded shadow-md font-bold'>
+            {" "}We're Arnold's Tech
+          </span>
+        </h1>
       </div>
+      <Connect />
+      <Connect />
+      <Connect />
       <Connect />
       <SideModal />
     </div>
