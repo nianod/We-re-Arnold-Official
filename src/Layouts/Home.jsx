@@ -2,8 +2,9 @@ import { Link } from 'react-router-dom'
 import Connect from '../Components/Connect'
 import SideModal from '../Components/SideModal'
 import { motion, useScroll, useSpring } from 'framer-motion'
+import Chat from '../Components/Chat'
 import Services from '../Components/Services'
-
+ 
 const Home = () => {
   const { scrollYProgress } = useScroll()
   const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30, restDelta: 0.001 })
@@ -63,8 +64,8 @@ const Home = () => {
       
       </div>
       <Connect />
-      <Services />
       <SideModal />
+      <Chat />
     </div>
   )
 }
