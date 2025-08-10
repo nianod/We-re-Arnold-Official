@@ -2,6 +2,7 @@ import React from 'react'
 import Connect from '../Components/Connect'
 import SideModal from '../Components/SideModal'
 import { motion, useScroll, useSpring } from 'framer-motion'
+import Services from '../Components/Services'
 
 const Home = () => {
   const { scrollYProgress } = useScroll()
@@ -39,11 +40,13 @@ const Home = () => {
             Software Development | Web Design | Social Media Growth & More
           </span>
         </p>
+        <div className='flex justify-center text-white gap-4 mt-2'>
+          <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet'>OUR Services</button>
+          <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet'>EXPLORE</button>
+        </div>
       </div>
       <Connect />
-      <Connect />
-      <Connect />
-      <Connect />
+      <Services />
       <SideModal />
     </div>
   )
