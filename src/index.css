@@ -17,5 +17,10 @@ body {
     -5px -4px 5px rgba(107, 148, 236, 0.9);
     background: linear-gradient(to right, rgb(156, 160, 231), blue);
 }
+.box {
+   transition: box-shadow 0.3s ease-in-out;  
+}
 
- 
+.box:hover {
+    box-shadow: 0px 1px 5px 5px rgba(209, 215, 209, 0.6);
+}

@@ -25,7 +25,7 @@ const Header = () => {
         </div>
         <div className="text-white flex gap-4">
           <Link to="/contact">
-            <button className="flex items-center gap-2 p-2 border-gray-600 border font-semibold px-2 p-1 rounded  cursor-pointer hover:bg-blue-800 transition">
+            <button className="flex items-center gap-2 p-2 border-gray-600 border font-semibold px-2 rounded  cursor-pointer hover:bg-blue-800 transition">
               Contact Us <FaPhone />
             </button>
           </Link>
