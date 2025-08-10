@@ -1,4 +1,5 @@
 import Layout from "./Components/Layout"
+import Services from "./Components/Services"
 import SideModal from "./Components/SideModal"
 import Contact from "./Layouts/Contact"
 import Home from "./Layouts/Home"
@@ -13,6 +14,7 @@ const App = () => {
             <Route path="/" element={<Home />}/>
             <Route path="contact" element={<Contact />}/>
             <Route path="modal" element={<SideModal />}/>
+            <Route path="services" element={<Services />}/>
           </Route>
         </Routes>
       </Router>

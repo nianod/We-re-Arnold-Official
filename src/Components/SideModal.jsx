@@ -26,7 +26,7 @@ const SideModal = ({sideMenu, setSideMenu}) => {
             <Link to="/">🏠︎ Home</Link>
           </p>
           <p className="hover:bg-gray-700 hover:transition p-3 rounded cursor-pointer" onClick={() => setSideMenu(false)}>
-            <Link to="/">🛍️ Our Services</Link>
+            <Link to="services">🛍️ Our Services</Link>
           </p>
           <p className="hover:bg-gray-700 hover:transition p-3 rounded cursor-pointer" onClick={() => setSideMenu(false)}>
             <Link to="contact">⛓️‍💥 Connect with Us</Link>

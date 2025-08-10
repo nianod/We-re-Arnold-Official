@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import Connect from '../Components/Connect'
 import SideModal from '../Components/SideModal'
 import { motion, useScroll, useSpring } from 'framer-motion'
@@ -10,7 +10,7 @@ const Home = () => {
 
    
   return (
-    <div className='mt-20'>
+    <div className='mt-20 pb-30'>
       <motion.div
         id='scroll-indicator'
         style={{
@@ -40,10 +40,27 @@ const Home = () => {
             Software Development | Web Design | Social Media Growth & More
           </span>
         </p>
-        <div className='flex justify-center text-white gap-4 mt-2'>
-          <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet'>OUR Services</button>
-          <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet'>EXPLORE</button>
+        <div className='flex justify-center text-white gap-4 mt-4'>
+          <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:-translate-y-1 transition-transform duration-200'>OUR Services</button>
+          <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:-translate-y-1 transition-transform duration-200'>EXPLORE</button>
         </div>
+      </div>
+      <div className='flex flex-col justify-center items-center mt-7 border-green-500 border-2 w-fit m-auto p-5 rounded card'>
+        <h2 className='text-xl text-white font-bold underline'>OUR SERVICES</h2>
+        <ul className='flex flex-col text-white mt-3 gap-2 m-3'>
+          <li>💻 Custom Software Development</li>
+          <li>🌐 Web Design & Development</li>
+          <li>🎨 Graphic & Branding Design</li>
+          <li>📈 Social Media Growth</li>
+          <li>🤖 WhatsApp Bot Automation</li>
+          <li>☁️ Heroku Billing Solutions</li>
+          <li>🚀 Freelance Tech Support</li>
+          <li>🎗️Influencer Marketing</li>
+        </ul>
+        <Link to="/services">
+          <button className='text-white bg-blue-500 cursor-pointer p-2 px-5 rounded-2xl font-bold'>Explore in Details →</button>
+        </Link>
+      
       </div>
       <Connect />
       <Services />
