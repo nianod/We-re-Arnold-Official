@@ -47,7 +47,7 @@ const Home = () => {
         </div>
       </div>
       <div className='flex flex-col justify-center items-center mt-7 border-green-500 border-2 w-fit m-auto p-5 rounded card'>
-        <h2 className='text-xl text-white font-bold underline'>OUR SERVICES</h2>
+        <h2 className='text-xl text-green-500 font-bold underline'>OUR SERVICES</h2>
         <ul className='flex flex-col text-white mt-3 gap-2 m-3'>
           <li>💻 Custom Software Development</li>
           <li>🌐 Web Design & Development</li>
