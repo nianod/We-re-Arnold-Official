@@ -42,13 +42,13 @@ const Home = () => {
           </span>
         </p>
         <div className='flex justify-center text-white gap-4 mt-4'>
-          <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:-translate-y-1 transition-transform duration-200'>EXPLORE</button>
+          <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:scale-110 transition-transform duration-200'>EXPLORE</button>
           <Link to="services">
-            <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:-translate-y-1 transition-transform duration-200'>OUR SERVICES</button>
+            <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:scale-110 transition-transform duration-200'>OUR SERVICES</button>
           </Link>
         </div>
       </div>
-      <div className=' flex flex-col justify-center items-center mt-7 border-green-500 border-2 w-fit m-auto p-5 rounded box-orange-green'>
+      <div className=' flex flex-col justify-center items-center mt-7 border-2 w-fit m-auto p-5 rounded-md box-orange-green'>
         <div className='content'>
         <h2 className='text-xl text-green-500 font-bold underline'></h2>
         <ul className='flex flex-col text-white mt-3 gap-2 m-3'>

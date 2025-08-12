@@ -11,10 +11,8 @@ const FloatingButton = () => {
         onMouseLeave={() => setModal(false)}
         className="relative w-16 h-16"
       >
-        {/* Gradient Ring */}
         <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-spin-slow opacity-75"></div>
 
-        {/* WhatsApp Button */}
         <a
           href="https://wa.link/bgkzwq"
           target="_blank"
@@ -24,7 +22,6 @@ const FloatingButton = () => {
           <FaWhatsapp size={28} />
         </a>
 
-        {/* Hover Modal */}
         {modal && (
           <div className="absolute bottom-20 left-full ml-2 translate-y-1/2 bg-gray-800 text-white text-sm px-3 py-2 rounded-md whitespace-nowrap shadow-lg transition-all duration-300 opacity-100 translate-x-0 w-[180px]">
             <p className="mb-2">Chat with our Team</p>

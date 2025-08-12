@@ -4,18 +4,19 @@ body {
 }
 .contact {
     background-color: rgb(11, 5, 70);
+  
 }
 .clips {
-    background-image: url('public/pic1.png');
+    background-image: url('public/Screenshot 2025-08-12 165339.png');
     background-size: cover;
     background-clip: text;
     color: transparent;
     animation: animate 10s linear infinite;
 }
 .beet {
-    box-shadow: 3px 2px 3px rgba(255, 255, 255, 0.9),
-    -5px -4px 5px rgba(107, 148, 236, 0.9);
-    background: linear-gradient(to right, rgb(156, 160, 231), blue);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9),
+    -1px -1px 3px rgba(107, 148, 236, 0.9);
+    background: linear-gradient(to right, rgb(84, 11, 11), blue);
 }
 .box {
    transition: box-shadow 0.3s ease-in-out;  

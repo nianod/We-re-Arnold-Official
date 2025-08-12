@@ -24,7 +24,7 @@ const Connect = () => {
         {contactSites.map((contact, index) => (
           <div
             key={index}
-            className="box border border-gray-600 justify-center flex gap-2 p-2 rounded-xl h-20 max-w-[70px] bg-[#04043c] 
+            className="box border border-gray-700 justify-center flex gap-2 p-2 rounded-xl h-20 max-w-[70px] bg-[#04043c] 
              transition-all duration-300 hover:scale-110 hover:z-10"
           >
             {contact.label === "Contact" ? (
