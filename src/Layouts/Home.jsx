@@ -3,7 +3,7 @@ import Connect from '../Components/Connect'
 import SideModal from '../Components/SideModal'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import Chat from '../Components/Chat'
-import Services from '../Components/Services'
+ 
  
 const Home = () => {
   const { scrollYProgress } = useScroll()
@@ -42,12 +42,15 @@ const Home = () => {
           </span>
         </p>
         <div className='flex justify-center text-white gap-4 mt-4'>
-          <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:-translate-y-1 transition-transform duration-200'>OUR Services</button>
           <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:-translate-y-1 transition-transform duration-200'>EXPLORE</button>
+          <Link to="services">
+            <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:-translate-y-1 transition-transform duration-200'>OUR SERVICES</button>
+          </Link>
         </div>
       </div>
-      <div className='flex flex-col justify-center items-center mt-7 border-green-500 border-2 w-fit m-auto p-5 rounded card'>
-        <h2 className='text-xl text-green-500 font-bold underline'>OUR SERVICES</h2>
+      <div className=' flex flex-col justify-center items-center mt-7 border-green-500 border-2 w-fit m-auto p-5 rounded box-orange-green'>
+        <div className='content'>
+        <h2 className='text-xl text-green-500 font-bold underline'></h2>
         <ul className='flex flex-col text-white mt-3 gap-2 m-3'>
           <li>💻 Custom Software Development</li>
           <li>🌐 Web Design & Development</li>
@@ -58,10 +61,10 @@ const Home = () => {
           <li>🚀 Freelance Tech Support</li>
           <li>🎗️Influencer Marketing</li>
         </ul>
-        <Link to="/services">
-          <button className='text-white bg-blue-500 cursor-pointer p-2 px-5 rounded-2xl font-bold'>Explore in Details →</button>
+        <Link to="services" className='text-white bg-blue-500 cursor-pointer p-2 px-5 rounded-2xl font-bold mt-5 flex justify-center'>
+          Explore in Details →
         </Link>
-      
+        </div>
       </div>
       <Connect />
       <SideModal />

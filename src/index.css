@@ -20,7 +20,61 @@ body {
 .box {
    transition: box-shadow 0.3s ease-in-out;  
 }
-
 .box:hover {
     box-shadow: 0px 1px 5px 5px rgba(209, 215, 209, 0.6);
+}
+.box-orange-green {
+    position: relative; 
+    max-width: 400px;
+    max-height: 500px;
+    background-color: rgb(0, 0, 0);
+}
+ 
+.box-orange-green .content { 
+    background: #060c21;
+}
+ 
+.box-orange-green::before,
+.box-orange-green::after {
+    content: "";
+    position: absolute;
+    inset: -3px;  
+    border-radius: 9px;
+    z-index: -1;
+}
+.box-orange-green::before,
+.box-orange-green::after {
+    background: conic-gradient(
+        from var(--angle),
+        #f35807,   
+        #060c21,   
+        #36d709,  
+        #060c21,   
+        #f35807
+    );
+}
+
+.box-orange-green::after {
+    filter: blur(20px);
+    z-index: -1;
+}
+.box-orange-green:hover::before,
+.box-orange-green:hover::after {
+    animation: glowing-border-orange-green 3.5s linear infinite;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 53deg;
+    inherits: false;
+}
+
+@keyframes glowing-border-orange-green {
+    from { --angle: 53deg; }
+    to   { --angle: 413deg; }
+}
+
+@keyframes blur-effect {
+    from { filter: blur(20px); }
+    to   { filter: blur(19px); }
 }

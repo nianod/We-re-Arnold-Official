@@ -11,7 +11,7 @@ const navContents = {
 const Header = () => {
   const [sideMenu, setSideMenu] = useState(false);
   return (
-    <div className="top-0 z-auto fixed w-full">
+    <div className="top-0 z-20 fixed w-full">
       <div className="flex  justify-between gap-1 p-3 backdrop-blur-md bg-opacity-50 text-[#6b57d2] font-bold border-b border-gray-400">
         <div className="flex items-center gap-2 text-xl">
           <img
