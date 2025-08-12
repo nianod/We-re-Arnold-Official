@@ -25,13 +25,13 @@ const Header = () => {
         </div>
         <div className="text-white flex gap-4">
           <Link to="/contact">
-            <button className="box flex items-center gap-2 p-2 border-gray-600 border font-semibold px-2 rounded  cursor-pointer hover:bg-blue-800 transition">
+            <button className="box flex items-center gap-2 p-2 border-gray-600 border font-semibold px-2 rounded-xl cursor-pointer hover:bg-blue-800 transition">
               Contact Us <FaPhone />
             </button>
           </Link>
 
           <button
-            className="box text-white border rounded px-3 border-gray-600 cursor-pointer hover:bg-blue-800 transition"
+            className="box text-white border rounded-xl px-3 border-gray-600 cursor-pointer hover:bg-blue-800 transition"
             onClick={() => setSideMenu(true)}
           >
             <FaBars />

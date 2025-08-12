@@ -3,6 +3,7 @@ import Connect from '../Components/Connect'
 import SideModal from '../Components/SideModal'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import Chat from '../Components/Chat'
+import OurWork from '../Components/OurWork'
  
  
 const Home = () => {
@@ -48,9 +49,16 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      <div className=" m-auto w-3/4 h-1 rounded bg-gradient-to-r from-[#98068c] via-green to-transparent mt-6"></div>
+      <div>
+        <OurWork />
+      </div>
+       <div className=" m-auto w-3/4 h-1 rounded bg-gradient-to-r from-[#98068c] via-green to-transparent"></div>
+      
+      <div className='mt-10'>
+        <h2 className='text-2xl text-green-500 text-center font-bold underline'>Services</h2>
       <div className=' flex flex-col justify-center items-center mt-7 border-2 w-fit m-auto p-5 rounded-md box-orange-green'>
         <div className='content'>
-        <h2 className='text-xl text-green-500 font-bold underline'></h2>
         <ul className='flex flex-col text-white mt-3 gap-2 m-3'>
           <li>💻 Custom Software Development</li>
           <li>🌐 Web Design & Development</li>
@@ -65,6 +73,7 @@ const Home = () => {
           Explore in Details →
         </Link>
         </div>
+      </div>
       </div>
       <Connect />
       <SideModal />
