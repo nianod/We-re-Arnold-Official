@@ -5,7 +5,7 @@ const FloatingButton = () => {
   const [modal, setModal] = useState(false);
 
   return (
-    <div className="fixed bottom-5 left-5 z-50">
+    <div className="fixed bottom-5 left-5 z-60">
       <div
         onMouseEnter={() => setModal(true)}
         onMouseLeave={() => setModal(false)}

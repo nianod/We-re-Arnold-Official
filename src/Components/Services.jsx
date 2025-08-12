@@ -1,4 +1,4 @@
-import { FaCode, FaPaintBrush, FaHashtag, FaBriefcase, FaRobot, FaHandshake  } from "react-icons/fa";
+import { FaCode, FaPaintBrush, FaHashtag, FaBriefcase, FaRobot, FaHandshake } from "react-icons/fa";
 
 const Services = () => {
   const services = [
@@ -37,7 +37,6 @@ const Services = () => {
   return (
     <div className="mt-20 pb-20">
       <h2 className="text-3xl font-bold text-center text-green-400 underline">Our Services</h2>
-
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9 p-10">
         {services.map((service, i) => (
           <div

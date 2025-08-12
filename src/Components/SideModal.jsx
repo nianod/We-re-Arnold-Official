@@ -5,7 +5,7 @@ const SideModal = ({sideMenu, setSideMenu}) => {
     <div>
       {sideMenu && (
         <div
-          className="fixed inset-0  z-40 backdrop-blur-md"
+          className="fixed inset-0  z-10 backdrop-blur-md"
           onClick={() => setSideMenu(false)}
         ></div>
       )}
