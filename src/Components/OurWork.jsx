@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import services from "./Logs/services";
+ 
 
 const moreProjects = {
   url: "https://github.com/nianod?tab=repositories",
@@ -10,7 +10,7 @@ let handOnProjects = [
     label: "Online Rental Management",
     source: "https://github.com/nianod/Stack-Rent/",
     live: "https://online-renting-six.vercel.app",
-    desciption: "",
+    description: "",
     photo: "Screenshot 2025-05-21 153717.png",
     name: "Online Rental Management",
   },
@@ -18,7 +18,7 @@ let handOnProjects = [
     label: "Chatbot",
     source: "https://github.com/nianod/Express-Ai-Chatbot",
     live: "https://express-ai-chatbot.vercel.app/",
-    desciption: "An AI-powered chatbot application built to interact with users in real time. Integrates natural language processing and a user-friendly interface for smooth conversational experiences.",
+    description: "An AI-powered chatbot application built to interact with users in real time. Integrates natural language processing and a user-friendly interface for smooth conversational experiences.",
     photo: "chatbot.jpeg",
     name: "AI Chatbot",
   },
@@ -26,7 +26,7 @@ let handOnProjects = [
     label: "Youtube Video Downloader",
     source: "https://github.com/nianod/Youtube-downloader",
     live: "https://youtube-video-downloader-two-delta.vercel.app/",
-    desciption: "A custom Node.js-based YouTube downloader built with Express and ytdl-core. Provides an API to fetch and download video/audio streams from YouTube URLs.",
+    description: "A custom Node.js-based YouTube downloader built with Express and ytdl-core. Provides an API to fetch and download video/audio streams from YouTube URLs.",
     photo: "images.jpeg",
     name: "Youtube Video Downloader",
   },
@@ -34,7 +34,7 @@ let handOnProjects = [
     label: "Github profile Finder",
     source: "https://github.com/nianod/Github-Profile-Finder",
     live: "https://github-profile-finder-smoky.vercel.app/",
-    desciption: "A simple application where you can search any Github user profila and view their details, Build using Github API",
+    description: "A simple application where you can search any Github user profila and view their details, Build using Github API",
     photo: "Screenshot 2025-06-13 101018.png",
     name: "Github profile Finder",
   },
@@ -42,7 +42,7 @@ let handOnProjects = [
     label: "Confession Arena",
     source: "https://github.com/nianod/secret-arena",
     live: "https://airbnb-look-alike.vercel.app//",
-    desciption: "A site which allows users to Freely expose their thoughts, Post or Say anything, Reveal secret without any restriction while staying Anonymous",
+    description: "A site which allows users to Freely expose their thoughts, Post or Say anything, Reveal secret without any restriction while staying Anonymous",
     photo: "Screenshot 2025-06-15 132700.png",
     name: "Confession Arena",
   },
@@ -50,7 +50,7 @@ let handOnProjects = [
     label: "Car shelf",
     source: "https://github.com/nianod/Milele-Car-Shelf",
     live: "https://milele-car-shelf.vercel.app/",
-    desciption: "An simple app to sell, Buy and Hire available cars",
+    description: "An simple app to sell, Buy and Hire available cars",
     photo: "Screenshot 2025-06-18 002149.png",
     name: "Car shelf",
   },
@@ -58,12 +58,20 @@ let handOnProjects = [
     label: "Chat app",
     source: "https://github.com/nianod/Supabase-Chat-APP",
     live: "https://github.com/nianod/Supabase-Chat-APP",
-    desciption: "This is a realtime chat app which allow users to sign in with Google, send messages, and see them instantly update across all connected users using Supabase Realtime sockets",
+    description: "This is a realtime chat app which allow users to sign in with Google, send messages, and see them instantly update across all connected users using Supabase Realtime sockets",
     photo: "Screenshot 2025-08-01 231103.png",
     name: "Chat App",
   },
 ];
 const OurWork = () => {
+
+  const [openId, setOpenId] = useState(null)
+
+  const handleToggle = (index) => {
+    setOpenId((prevId) => (prevId === index ? null : index))
+  }
+
+  
   return (
     <>
       <div>
@@ -88,15 +96,13 @@ const OurWork = () => {
                   {item.label}
                 </h2>
 
-                <div className="flex justify-between">
-                  <a
-                    href={item.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-blue-600 px-3 py-1 rounded text-white hover:bg-blue-700"
+                <div className="flex flex-col gap-2 justify-between">
+                  <button
+                    onClick={()  =>  handleToggle(index)}
+                    className="bg-blue-600 px-3 py-1 rounded text-white hover:bg-blue-700 cursor-pointer"
                   >
-                    Description
-                  </a>
+                    {openId === index ? "Hide" : "Description"}
+                  </button>
                   <a
                     href={item.source}
                     target="_blank"
@@ -105,6 +111,11 @@ const OurWork = () => {
                   >
                     Repository
                   </a>
+                  {openId === index && (
+                    <p className="text-gray-400 mt-5">
+                      {item.description}
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
