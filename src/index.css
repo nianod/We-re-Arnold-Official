@@ -55,7 +55,7 @@ body {
 }
 
 .box-orange-green::after {
-    filter: blur(20px);
+    filter: blur(10px);
     z-index: -1;
 }
 .box-orange-green:hover::before,

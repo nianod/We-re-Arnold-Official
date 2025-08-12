@@ -14,7 +14,7 @@ const Services = () => {
     },
     {
       title: "WhatsApp Bots/Heroku Billing",
-      desc: "Automate Your Business with a WhatsApp Bot – Inquire Now! Heroku Billing Made Easy ",
+      desc: "Automate Your Business with a Furnished WhatsApp Bot – Inquire Now! Heroku Billing guaranteed Made Easy ",
       icon: <FaRobot size={28} />,
     },
     {
@@ -24,7 +24,7 @@ const Services = () => {
     },
     {
       title: "Freelance Work",
-      desc: "Need a Tech Guru? Hire Our Freelancers! On-Demand Developers & Designers – Book Yours.",
+      desc: "Need a Tech Guru? Hire Our passionate, Certified & Experienced Freelancers! On-Demand Developers, Designers & CyberSecurity experts– Book Yours.",
       icon: <FaBriefcase  size={28} />,
     },
     {
@@ -35,22 +35,22 @@ const Services = () => {
   ];
 
   return (
-    <div className="mt-20 px- pb-20">
-      <h2 className="text-3xl font-bold text-center text-white mb-10">Our Services</h2>
+    <div className="mt-20 pb-20">
+      <h2 className="text-3xl font-bold text-center text-green-400 mb-10">Our Services</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 p-10">
         {services.map((service, i) => (
           <div
             key={i}
-            className="bg-gradient-to-r from-[#ff0088] to-[#ff4d6d] p-[2px] rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group"
+            className="hover:p-2 translate-x-1.5 p-[2px] rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group"
           >
-            <div className="bg-gray-900 p-6 rounded-2xl text-white flex flex-col gap-4">
-              <div className="bg-[#ff0088] p-3 rounded-full shadow-md w-fit">
+            <div className="box-orange-green bg-[#03031c] p-6 rounded-2xl text-gray-300 flex flex-col gap-4">
+              <div className="content bg-[#ff0088] p-3 rounded-full shadow-md w-fit">
                 {service.icon}
               </div>
               <h3 className="text-xl font-bold">{service.title}</h3>
               <p className="text-gray-300">{service.desc}</p>
-              <button className="mt-3 bg-[#ff0088] px-4 py-2 cursor-pointer rounded-lg font-bold hover:bg-[#ff4d6d] transition-all duration-300">
+              <button className="mt-3 bg-[#030a92] px-4 py-2 cursor-pointer rounded-lg font-bold hover:bg-[#060c77] transition-all duration-300">
                 Learn More
               </button>
             </div>
