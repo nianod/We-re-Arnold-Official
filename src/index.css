@@ -27,7 +27,7 @@ body {
 .box-orange-green {
     position: relative; 
     max-width: 400px;
-    max-height: 500px;
+    max-height: fit-content;
     background-color: rgb(0, 0, 0);
 }
  

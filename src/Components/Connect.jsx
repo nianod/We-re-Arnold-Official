@@ -20,7 +20,7 @@ const Connect = () => {
       <h2 className="text-center text-[15px] font-semibold text-gray-400 mt-4">
         Follow, Connect & Reach to us
       </h2>
-      <div className="text-white flex items-center justify-center gap-2 mt-7">
+      <div className="text-white flex items-center justify-center gap-4 mt-7">
         {contactSites.map((contact, index) => (
           <div
             key={index}

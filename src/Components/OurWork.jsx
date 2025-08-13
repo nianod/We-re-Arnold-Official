@@ -6,21 +6,21 @@ const moreProjects = {
   url: "https://github.com/nianod?tab=repositories",
 };
 let handOnProjects = [
-  {
-    label: "Online Rental Management",
-    source: "https://github.com/nianod/Stack-Rent/",
-    live: "https://online-renting-six.vercel.app",
-    description: "",
-    photo: "Screenshot 2025-05-21 153717.png",
-    name: "Online Rental Management",
-  },
-  {
+ {
     label: "Chatbot",
     source: "https://github.com/nianod/Express-Ai-Chatbot",
     live: "https://express-ai-chatbot.vercel.app/",
     description: "An AI-powered chatbot application built to interact with users in real time. Integrates natural language processing and a user-friendly interface for smooth conversational experiences.",
-    photo: "chatbot.jpeg",
+    photo: "levart_photographer-drwpcjkvxuU-unsplash.jpg",
     name: "AI Chatbot",
+  },
+ {
+    label: "AI assistant",
+    source: "https://github.com/nianod/llama3-AI-Assistant",
+    live: "https://express-ai-chatbot.vercel.app/",
+    description: "This si an python based AI application able to receive instructions either in form of text, graphic or speech recognition, process and give feedback very fast",
+    photo: "Screenshot 2025-08-13 173353.png",
+    name: "AI Assistant",
   },
   {
     label: "Youtube Video Downloader",
@@ -35,7 +35,7 @@ let handOnProjects = [
     source: "https://github.com/nianod/Github-Profile-Finder",
     live: "https://github-profile-finder-smoky.vercel.app/",
     description: "A simple application where you can search any Github user profila and view their details, Build using Github API",
-    photo: "Screenshot 2025-06-13 101018.png",
+    photo: "github.jpeg",
     name: "Github profile Finder",
   },
   {
@@ -43,7 +43,7 @@ let handOnProjects = [
     source: "https://github.com/nianod/secret-arena",
     live: "https://airbnb-look-alike.vercel.app//",
     description: "A site which allows users to Freely expose their thoughts, Post or Say anything, Reveal secret without any restriction while staying Anonymous",
-    photo: "Screenshot 2025-06-15 132700.png",
+    photo: "reveal.jpeg",
     name: "Confession Arena",
   },
   {
@@ -51,7 +51,7 @@ let handOnProjects = [
     source: "https://github.com/nianod/Milele-Car-Shelf",
     live: "https://milele-car-shelf.vercel.app/",
     description: "An simple app to sell, Buy and Hire available cars",
-    photo: "Screenshot 2025-06-18 002149.png",
+    photo: "cars.jpeg",
     name: "Car shelf",
   },
   {
@@ -59,7 +59,7 @@ let handOnProjects = [
     source: "https://github.com/nianod/Supabase-Chat-APP",
     live: "https://github.com/nianod/Supabase-Chat-APP",
     description: "This is a realtime chat app which allow users to sign in with Google, send messages, and see them instantly update across all connected users using Supabase Realtime sockets",
-    photo: "Screenshot 2025-08-01 231103.png",
+    photo: "images.png",
     name: "Chat App",
   },
 ];
