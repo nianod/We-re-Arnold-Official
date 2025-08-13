@@ -4,6 +4,7 @@ import SideModal from '../Components/SideModal'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import Chat from '../Components/Chat'
 import OurWork from '../Components/OurWork'
+import HerokuBots from '../Components/HerokuBots'
  
  
 const Home = () => {
@@ -54,7 +55,10 @@ const Home = () => {
         <OurWork />
       </div>
        <div className=" m-auto w-3/4 h-1 rounded bg-gradient-to-r from-[#98068c] via-green to-transparent"></div>
-      
+        <div>
+          
+          <HerokuBots />
+        </div>
       <div className='mt-10'>
         <h2 className='text-2xl text-green-500 text-center font-bold underline'>Services</h2>
       <div className=' flex flex-col justify-center items-center mt-7 border-2 w-fit m-auto p-5 rounded-md box-orange-green'>

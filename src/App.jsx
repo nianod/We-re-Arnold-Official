@@ -1,3 +1,4 @@
+import HerokuBots from "./Components/HerokuBots"
 import Layout from "./Components/Layout"
 import OurWork from "./Components/OurWork"
 import Services from "./Components/Services"
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="modal" element={<SideModal />}/>
             <Route path="services" element={<Services />}/>
             <Route path="/work" element={<OurWork />} />
+            <Route path="/bots" element={<HerokuBots />} />
           </Route>
         </Routes>
       </Router>
