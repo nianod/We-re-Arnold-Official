@@ -1,9 +1,10 @@
 const PortfolioCard = () => {
   return (
     <div
+      data-aos="zoom-in"
       className="bg-black shadow-lg rounded-xl p-6 max-w-sm mx-auto text-center border hover:shadow-2xl transition-all duration-300"
     >
-      <h2 className="text-lg font-semibold text-gray-300">Visit Our Portfolio</h2>
+      <h2 className="text-lg font-semibold text-green-500">Visit Our Portfolio</h2>
       <p className="text-gray-500 mt-2">
         Explore our projects, skills, and work experience.
       </p>
