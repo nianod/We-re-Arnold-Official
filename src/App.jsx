@@ -9,6 +9,7 @@ import Contact from "./Layouts/Contact"
 import Home from "./Layouts/Home"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { useEffect } from "react"
+import PortFolio from "./Components/PortFolio"
 
 const App = () => {
   useEffect(() => {
@@ -28,6 +29,7 @@ const App = () => {
             <Route path="services" element={<Services />}/>
             <Route path="/work" element={<OurWork />} />
             <Route path="/bots" element={<HerokuBots />} />
+            <Route path="/portfolio" element={<PortFolio />} />
           </Route>
         </Routes>
       </Router>

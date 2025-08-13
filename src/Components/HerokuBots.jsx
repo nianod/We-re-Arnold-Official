@@ -16,7 +16,7 @@ const HerokuBots = () => {
 
   return (
     <>
-    <div className="p-20">
+    <div className="p-5">
     <h2 className="text-2xl text-green-500 underline font-bold text-center">Heroku Services</h2>
     <div data-aos="flip-up" className=" flex justify-center">
       

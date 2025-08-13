@@ -122,13 +122,15 @@ const OurWork = () => {
           ))}
         </div>
       </div>
-      <div className="pb-25 flex justify-center mt-15">
+      <div className="pb-15 flex justify-center mt-10">
         <Link to={moreProjects.url} target="_blank">
           <button className="text-[white] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:scale-110 transition-transform duration-200">
             More Projects
           </button>
         </Link>
+        
       </div>
+      
     </>
   );
 };
