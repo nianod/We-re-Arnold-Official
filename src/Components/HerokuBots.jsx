@@ -18,7 +18,7 @@ const HerokuBots = () => {
     <>
     <div className="p-20">
     <h2 className="text-2xl text-green-500 underline font-bold text-center">Heroku Services</h2>
-    <div className=" flex justify-center">
+    <div data-aos="flip-up" className=" flex justify-center">
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 mt-5" >
         {heroku.map((item, index) => (

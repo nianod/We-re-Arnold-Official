@@ -1,4 +1,6 @@
 import HerokuBots from "./Components/HerokuBots"
+import "aos/dist/aos.css"
+import AOS from "aos"
 import Layout from "./Components/Layout"
 import OurWork from "./Components/OurWork"
 import Services from "./Components/Services"
@@ -6,8 +8,15 @@ import SideModal from "./Components/SideModal"
 import Contact from "./Layouts/Contact"
 import Home from "./Layouts/Home"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { useEffect } from "react"
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    })
+  }, [])
   return (
     <>
       <Router>
