@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 body {
     background-color: rgb(6, 2, 52);
+     
 }
 .contact {
     background-color: rgb(11, 5, 70);
@@ -17,7 +18,39 @@ body {
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9),
     -1px -1px 3px rgba(107, 148, 236, 0.9);
     background: linear-gradient(to right, rgb(84, 11, 11), blue);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+} 
+.beet:hover {
+    transform: translateY(-1px) scale(1.00);
+    box-shadow: 4px 4px 15px rgba(255, 255, 255, 0.9),
+    -2px -2px 8px rgba(107, 148, 236, 0.9);
+} 
+.beet::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.6),
+        transparent
+    );
+    transform: skewX(-25deg);
+} 
+.beet:hover::after {
+    animation: shimmer 1s ease forwards;
 }
+@keyframes shimmer {
+    100% {
+        left: 125%;
+    }
+}
+
 .box {
    transition: box-shadow 0.3s ease-in-out;  
 }
@@ -78,4 +111,23 @@ body {
 @keyframes blur-effect {
     from { filter: blur(20px); }
     to   { filter: blur(19px); }
+}
+.social-scroll{
+    padding-bottom: 10px;
+}
+.social-scroll::-webkit-scrollbar {
+  height: 6px; 
+}
+
+.social-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.social-scroll::-webkit-scrollbar-thumb {
+  background: #ff0088;
+  border-radius: 10px;
+}
+
+.social-scroll::-webkit-scrollbar-thumb:hover {
+  background: #d6006e;
 }

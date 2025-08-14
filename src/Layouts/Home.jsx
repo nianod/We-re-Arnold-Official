@@ -14,7 +14,7 @@ const Home = () => {
 
    
   return (
-    <div className='mt-20 pb-30'>
+    <div className='mt-20 pb-30 overflow-x-hidden'>
       <motion.div
         id='scroll-indicator'
         style={{
