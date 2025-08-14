@@ -51,7 +51,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <div className=" m-auto w-3/4 h-1 rounded bg-gradient-to-r from-[#98068c] via-green to-transparent mt-2"></div>
+      {/* <div className=" m-auto w-3/4 h-1 rounded bg-gradient-to-r from-[#98068c] via-green to-transparent mt-2"></div> */}
       <div>
         <OurWork />
       </div>
