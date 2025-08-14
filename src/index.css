@@ -7,7 +7,7 @@ body {
   
 }
 .clips {
-    background-image: url('Screenshot 2025-08-12 165339.png');
+    background-image: url('/Screenshot 2025-08-12 165339.png');
     background-size: cover;
     background-clip: text;
     color: transparent;
