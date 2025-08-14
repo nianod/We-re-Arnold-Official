@@ -1,43 +1,52 @@
-import { Link } from 'react-router-dom'
-const SideModal = ({sideMenu, setSideMenu}) => {
-  
+import { Link } from 'react-router-dom';
+
+const SideModal = ({ sideMenu, setSideMenu }) => {
   return (
     <div>
       {sideMenu && (
         <div
-          className="fixed inset-0  z-10 backdrop-blur-md"
+          className="fixed inset-0 z-10 backdrop-blur-md bg-black/40"
           onClick={() => setSideMenu(false)}
         ></div>
       )}
+
       <div
-        className={`fixed top-0 right-0 h-screen w-[30%] bg-blue-950 z-50 transform transition-transform duration-300 ${
-          sideMenu ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed top-0 right-0 h-screen w-full sm:w-96 md:w-[30%] 
+        bg-gradient-to-b from-blue-950 via-blue-900 to-blue-950
+        shadow-2xl shadow-blue-900/50 z-50 transform 
+        transition-transform duration-300 ease-in-out
+        ${sideMenu ? 'translate-x-0' : 'translate-x-full'}`}
       >
+  
         <button
           onClick={() => setSideMenu(false)}
-          className="text-gray-300 font-bold cursor-pointer top-0 absolute right-0 p-2"
+          className="cursor-pointer text-gray-300 font-bold absolute top-2 right-2 text-2xl hover:rotate-180 transition-transform duration-300"
         >
           ╳
         </button>
-        <div className="p-5 text-white flex flex-col gap-2">
-          <h2 className="text-green-500 text-xl font-[helvetica] mt-6">Menu</h2>
-          <p className="hover:bg-gray-700 hover:transition p-3 rounded cursor-pointer" onClick={() => setSideMenu(false)}>
-            <Link to="/">🏠︎ Home</Link>
-          </p>
-          <p className="hover:bg-gray-700 hover:transition p-3 rounded cursor-pointer" onClick={() => setSideMenu(false)}>
-            <Link to="services">🛍️ Our Services</Link>
-          </p>
-          <p className="hover:bg-gray-700 hover:transition p-3 rounded cursor-pointer" onClick={() => setSideMenu(false)}>
-            <Link to="/work">⛓️‍💥 Our Woks</Link>
-          </p>
-          <p className="hover:bg-gray-700 hover:transition p-3 rounded cursor-pointer" onClick={() => setSideMenu(false)}>
-            <Link to="/">🗑️ About Us</Link>
-          </p>
+        <div className="p-5 text-white flex flex-col gap-2 mt-8">
+          <h2 className="text-green-500 text-xl font-[helvetica] mb-4">Menu</h2>
+
+          {[
+            { to: '/', label: '🏠︎ Home' },
+            { to: 'services', label: '🛍️ Our Services' },
+            { to: '/work', label: '⛓️‍💥 Our Works' },
+            { to: '/', label: '🗑️ About Us' },
+          ].map((item, idx) => (
+            <p
+              key={idx}
+              className="hover:bg-blue-800/60 transition p-3 rounded cursor-pointer"
+              onClick={() => setSideMenu(false)}
+            >
+              <Link to={item.to} className="block w-full">
+                {item.label}
+              </Link>
+            </p>
+          ))}
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default SideModal
+export default SideModal;
