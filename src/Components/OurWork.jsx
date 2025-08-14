@@ -74,7 +74,7 @@ const OurWork = () => {
   
   return (
     <>
-      <div data-aos="flip-up">
+      <div data-aos="flip-up" className="flex items-center justify-center flex-col">
         <h1 className="text-2xl underline text-green-600 text-center font-bold mt-15">
           Our Featured Projects
         </h1>

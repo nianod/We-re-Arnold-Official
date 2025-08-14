@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 body {
-    background-color: rgb(6, 2, 52);
+    /* background-color: rgb(6, 2, 52); */
+    background-image:(url(joshua-aragon-BMnhuwFYr7w-unsplash.jpg)) ;
      
 }
 .contact {
@@ -8,7 +9,7 @@ body {
   
 }
 .clips {
-    background-image: url('public/Screenshot 2025-08-12 165339.png');
+    background-image: url('Screenshot 2025-08-12 165339.png');
     background-size: cover;
     background-clip: text;
     color: transparent;

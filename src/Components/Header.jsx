@@ -4,7 +4,7 @@ import { useState } from "react";
 import SideModal from "./SideModal";
 
 const navContents = {
-  image: "public/pic1.png",
+  image: "pic1.png",
   title: "We're Arnold's Tech",
 };
 
