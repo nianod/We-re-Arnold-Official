@@ -78,7 +78,7 @@ const OurWork = () => {
         <h1 className="text-2xl underline text-green-600 text-center font-bold mt-15">
           Our Featured Projects
         </h1>
-        <div className="grid md:grid-cols-4 sm:grid-cols-1 gap-10 px-6 py-5 ">
+        <div className="grid md:grid-cols-4 sm:grid-cols-1 gap-9 px-6 py-5 ">
           {handOnProjects.map((item, index) => (
             <div
               key={index}

@@ -24,17 +24,23 @@ const Header = () => {
           </Link>
         </div>
         <div className="text-white flex gap-4">
-          <Link to="/contact">
-            <button className="box flex items-center gap-2 p-2 border-gray-600 border font-semibold px-2 rounded-xl cursor-pointer hover:bg-blue-800 transition">
-              Contact Us <FaPhone />
-            </button>
-          </Link>
-
-          <button
-            className="box text-white border rounded-xl px-3 border-gray-600 cursor-pointer hover:bg-blue-800 transition"
-            onClick={() => setSideMenu(true)}
+          <Link
+            to="/contact"
+            className={`cursor-pointer box relative px-4  flex items-center font-semibold border border-gray-600 overflow-hidden group rounded-xl`}
           >
-            <FaBars />
+            <span className="  absolute inset-0 bg-blue-600 translate-x-[-100%] group-hover:translate-x-0 rounded transition-transform duration-500"></span>
+            <span className="flex  items-center relative gap-2 text-white group-hover:text-white transition-colors duration-400">
+              contact us <span><FaPhone /></span>
+            </span>
+          </Link>
+          <button
+            onClick={() => setSideMenu(true)}
+            className={`cursor-pointer box relative px-4  flex items-center font-semibold border border-gray-600 overflow-hidden group rounded-xl`}
+          >
+            <span className="  absolute inset-0 bg-blue-600 translate-x-[-100%] group-hover:translate-x-0 rounded transition-transform duration-500"></span>
+            <span className="flex  items-center relative gap-2 text-white group-hover:text-white transition-colors duration-400">
+               <FaBars />
+            </span>
           </button>
         </div>
       </div>
