@@ -30,7 +30,7 @@ const SideModal = ({ sideMenu, setSideMenu }) => {
           {[
             { to: '/', label: '🏠︎ Home' },
             { to: 'services', label: '🛍️ Our Services' },
-            { to: '/work', label: '⛓️‍💥 Our Works' },
+            { to: '/work', label: '⛓️‍💥 Our Projects' },
             { to: '/', label: '🗑️ About Us' },
           ].map((item, idx) => (
             <p
