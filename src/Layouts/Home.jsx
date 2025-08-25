@@ -84,7 +84,9 @@ const Home = () => {
         </div>
       </div>
       </div>
-      <Testmonials />
+      <div>
+        <Testmonials />
+      </div>
       <Connect />
       <SideModal />
       <Chat />
