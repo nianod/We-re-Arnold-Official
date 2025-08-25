@@ -12,9 +12,9 @@ const Testmonials = () => {
       rate: "✰✰✰✰✰",
     },
     {
-      name: "Jane Smith",
+      name: "Orpha winfery",
       residence: "Kenya",
-      image: "/download (1).jpg",
+      image: "/download (2).jpg",
       quote:
         "Arnold consistently demonstrates professionalism and innovation in every project we’ve collaborated on.",
       rank: "CTO, Vision Tech",
@@ -39,7 +39,7 @@ const Testmonials = () => {
             />
             <b className="text-white block text-center mt-2">{testimony.name}</b>
             <p className="text-sm text-gray-400 mt-2">{testimony.quote}</p>
-            <i className="block text-right text-gray-500 mt-2">{testimony.rank}</i>
+            <i className="block text-right text-gray-500 mt-2">{testimony.rank}, <span>{testimony.residence}</span> </i>
             <div className="text-center mt-2 text-yellow-500">
               {testimony.rate}
             </div>
