@@ -45,9 +45,9 @@ const Home = () => {
           </span>
         </p>
         <div data-aos="flip-right" className='flex justify-center text-white gap-4 mt-4'>
-          <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:scale-110 transition-transform duration-200'>EXPLORE</button>
+          <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:scale-110 transition-transform duration-200'>EXPLORE OUR PRICING</button>
           <Link to="services">
-            <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:scale-110 transition-transform duration-200'>OUR SERVICES</button>
+            <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:scale-110 transition-transform duration-200'>EXPLORE OUR SERVICES</button>
           </Link>
         </div>
       </div>
