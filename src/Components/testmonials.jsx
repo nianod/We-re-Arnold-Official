@@ -12,7 +12,7 @@ const Testmonials = () => {
       rate: "✰✰✰✰✰",
     },
     {
-      name: "Orpha winfery",
+      name: "Ophra Winfery",
       residence: "Kenya",
       image: "/download (2).jpg",
       quote:
@@ -30,7 +30,7 @@ const Testmonials = () => {
         {testimonies.map((testimony, index) => (
           <div
             key={index}
-            className="w-80 shadow-lg rounded-xl p-6 bg-[#1b0e48]"
+            className="w-80 shadow-xl rounded-xl p-6 bg-[#1b0e48]"
           >
             <img
               src={testimony.image}
