@@ -6,6 +6,7 @@ import Chat from '../Components/Chat'
 import OurWork from '../Components/OurWork'
 import HerokuBots from '../Components/HerokuBots'
 import PortFolio from '../Components/PortFolio'
+import Testmonials from '../Components/testmonials'
  
  
 const Home = () => {
@@ -83,6 +84,7 @@ const Home = () => {
         </div>
       </div>
       </div>
+      <Testmonials />
       <Connect />
       <SideModal />
       <Chat />
