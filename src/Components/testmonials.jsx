@@ -30,6 +30,9 @@ const Testmonials = () => {
         {testimonies.map((testimony, index) => (
           <div
             key={index}
+            data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="800"
             className="w-80 shadow-xl rounded-xl p-6 bg-[#1b0e48]"
           >
             <img
