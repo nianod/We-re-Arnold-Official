@@ -32,7 +32,7 @@ Welcome to **We're Arnold Tech** — a modern, responsive, and tech-inspired sit
 Clone the repo:
 
 ```bash
-git clone https://github.com/your-username/we-re-arnold-tech.git
+git clone https://github.com/nianod/we-re-arnold-tech.git
 cd we-re-arnold-tech
 ```
 
@@ -65,4 +65,7 @@ This project is licensed under the MIT License.
 🔥 Built with passion at **We're Arnold Tech**.
 
 ---
+
+## Live Review
+<p>Click <a href="https://we-re-arnold-official.vercel.app/"> here </a> for live review </p>
 
