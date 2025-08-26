@@ -10,6 +10,7 @@ import Home from "./Layouts/Home"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { useEffect } from "react"
 import PortFolio from "./Components/PortFolio"
+import Pricing from "./services/pricing"
 
 const App = () => {
   useEffect(() => {
@@ -30,6 +31,7 @@ const App = () => {
             <Route path="/work" element={<OurWork />} />
             <Route path="/bots" element={<HerokuBots />} />
             <Route path="/portfolio" element={<PortFolio />} />
+            <Route path="/prices" element={<Pricing />} />
           </Route>
         </Routes>
       </Router>

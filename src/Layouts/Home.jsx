@@ -46,21 +46,19 @@ const Home = () => {
           </span>
         </p>
         <div data-aos="flip-right" className='flex justify-center text-white gap-4 mt-4'>
-          <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:scale-110 transition-transform duration-200'>EXPLORE OUR PRICING</button>
-          <Link to="services">
-            <button className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:scale-110 transition-transform duration-200'>EXPLORE OUR SERVICES</button>
+          <Link to="/prices" className='bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:scale-110 transition-transform duration-200'>EXPLORE OUR PRICING</Link>
+          <Link to="services" className=' bg-[#ff0088] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:scale-110 transition-transform duration-200'>
+              EXPLORE OUR SERVICES
           </Link>
         </div>
       </div>
-      {/* <div className=" m-auto w-3/4 h-1 rounded bg-gradient-to-r from-[#98068c] via-green to-transparent mt-2"></div> */}
       <div>
         <OurWork />
       </div>
         <div>
           <PortFolio />
         </div>      
-        <div>
-          
+        <div> 
           <HerokuBots />
         </div>
 
