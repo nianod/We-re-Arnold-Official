@@ -32,8 +32,8 @@ Welcome to **We're Arnold Tech** — a modern, responsive, and tech-inspired sit
 Clone the repo:
 
 ```bash
-git clone https://github.com/nianod/we-re-arnold-tech.git
-cd we-re-arnold-tech
+git clone https://github.com/nianod/We-re-Arnold-Official.git
+cd we-re-Arnold-Official
 ```
 
 Install dependencies:
