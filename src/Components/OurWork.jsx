@@ -74,7 +74,7 @@ const OurWork = () => {
   
   return (
     <>
-      <div data-aos="flip-up" className="flex items-center justify-center flex-col overflow-x-hidden">
+      <div data-aos="flip-up" className="flex items-center justify-center flex-col overflow-x-hidden ">
         <h1 className="text-2xl underline text-green-600 text-center font-bold mt-15">
           Our Featured Projects
         </h1>
@@ -122,7 +122,7 @@ const OurWork = () => {
           ))}
         </div>
       </div>
-      <div className="pb-15 flex justify-center mt-10">
+      <div className="pb-15 flex justify-center mt-10 bg-[#060234]">
         <Link to={moreProjects.url} target="_blank">
           <button className="text-[white] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:scale-110 transition-transform duration-200">
             More Projects

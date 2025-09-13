@@ -1,7 +1,8 @@
 import { FaCode, FaPaintBrush, FaHashtag, FaBriefcase, FaRobot, FaHandshake } from "react-icons/fa";
-
+import { useTheme } from "./Theme";
 const Services = () => {
-  const services = [
+  const { theme } = useTheme()
+   const services = [
     {
       title: "Web/Software Dev",
       desc: "Need a Custom App or Website? Let’s Code It! Turn Your Vision Into a Website Sleek, Fast, and Functional.",
@@ -34,26 +35,50 @@ const Services = () => {
     },
   ];
 
+
   return (
-    <div data-aos="flip-down" className="mt-20 pb-20 overflow-x-hidden">
-      <h2 className="text-3xl font-bold text-center text-green-400 underline">Our Services</h2>
+    <div
+      data-aos="flip-down"
+      className={`mt-20 pb-20 overflow-x-hidden ${
+        theme === "dark" ? "bg-[#060234]" : "bg-white"
+      }`}
+    >
+      <h2 className="text-3xl font-bold text-center text-green-400 underline">
+        Our Services
+      </h2>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9 p-10">
         {services.map((service, i) => (
           <div
             key={i}
             className="hover:scale-105 translate-x-1.5 p-[2px] rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group"
           >
-            <div className="box-orange-green bg-[#03031c] p-6 rounded-2xl text-gray-300 flex flex-col gap-4">
-              <div className="content bg-[#ff0088] p-3 rounded-full shadow-md w-fit">
+            <div
+              className={`box-orange-green p-6 rounded-2xl flex flex-col gap-4 ${
+                theme === "dark"
+                  ? "bg-[#03031c] text-gray-300"
+                  : "bg-white text-gray-800 border border-gray-200"
+              }`}
+            >
+              <div
+                className={`p-3 rounded-full shadow-md w-fit ${
+                  theme === "dark" ? "bg-[#ff0088]" : "bg-pink-500"
+                }`}
+              >
                 {service.icon}
               </div>
               <h3 className="text-xl font-bold">{service.title}</h3>
-              <p className="text-gray-300">{service.desc}</p>
+              <p>{service.desc}</p>
               <a
                 href="https://wa.link/tvgx9p"
                 target="_blank"
-                
-                className="mt-3 bg-[#030a92] px-4 py-2 cursor-pointer flex justify-center rounded-lg font-bold hover:bg-[#060c77] transition-all duration-300">
+                rel="noopener noreferrer"
+                className={`mt-3 px-4 py-2 cursor-pointer flex justify-center rounded-lg font-bold transition-all duration-300 ${
+                  theme === "dark"
+                    ? "bg-[#030a92] hover:bg-[#060c77] text-white"
+                    : "bg-blue-500 hover:bg-blue-600 text-white"
+                }`}
+              >
                 Learn More
               </a>
             </div>
