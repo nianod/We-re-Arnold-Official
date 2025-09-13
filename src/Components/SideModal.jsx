@@ -9,7 +9,7 @@ const SideModal = ({ sideMenu, setSideMenu }) => {
           onClick={() => setSideMenu(false)}
         ></div>
       )}
-
+ 
       <div
         className={`fixed top-0 right-0 h-screen w-70 sm:w-96 md:w-[30%] 
         bg-gradient-to-b from-blue-950 via-blue-900 to-blue-950

@@ -1,4 +1,4 @@
-import { FaPhone, FaBars } from "react-icons/fa";
+import { FaPhone, FaBars, FaMoon, FaSun } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import SideModal from "./SideModal";
@@ -9,8 +9,14 @@ const navContents = {
 };
 
 const Header = () => {
-  const [sideMenu, setSideMenu] = useState(false);
+  const [sideMenu, setSideMenu] = useState(false)
+  const [theme, setTheme] = useState('dark')
 
+  const changeTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light'
+    setTheme(newTheme)
+    document.documentElement.classList.toggle('dark', newTheme === 'dark')
+  }
   return (
     <div className="top-0 z-20 fixed w-full">
       <div className="flex justify-between gap-1 p-3 backdrop-blur-md bg-opacity-50 text-[#6b57d2] font-bold border-b border-gray-400">
@@ -25,6 +31,17 @@ const Header = () => {
           </Link>
         </div>
         <div className="text-white flex gap-4">
+          <div className="flex flex-col items-center">
+          <button
+           onClick={changeTheme}
+           className="cursor-pointer" 
+          >
+            {theme === 'dark' ? <FaSun /> : <FaMoon />}
+          </button>
+          <span>
+            {theme === 'light' ? "Dark" : "Light"}
+          </span>
+          </div>
           <Link
             to="/contact"
             className="cursor-pointer box relative sm:px-4 px-4 flex items-center font-semibold border border-gray-600 overflow-hidden group rounded-xl"
