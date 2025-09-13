@@ -2,6 +2,7 @@ import { FaPhone, FaBars, FaMoon, FaSun } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import SideModal from "./SideModal";
+import { useTheme } from "./Theme";
 
 const navContents = {
   image: "/pic1.png",
@@ -9,16 +10,12 @@ const navContents = {
 };
 
 const Header = () => {
-  const [sideMenu, setSideMenu] = useState(false)
-  const [theme, setTheme] = useState('dark')
 
-  const changeTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light'
-    setTheme(newTheme)
-    document.documentElement.classList.toggle('dark', newTheme === 'dark')
-  }
+   const [sideMenu, setSideMenu] = useState(false)
+   const { theme, toggleTheme } = useTheme()
+
   return (
-    <div className="top-0 z-20 fixed w-full">
+    <div className="top-0 z-20 fixed w-full bg-white dark:bg-[#060234]">
       <div className="flex justify-between gap-1 p-3 backdrop-blur-md bg-opacity-50 text-[#6b57d2] font-bold border-b border-gray-400">
         <div className="flex items-center gap-2 text-xl">
           <img
@@ -33,7 +30,7 @@ const Header = () => {
         <div className="text-white flex gap-4">
           <div className="flex flex-col items-center">
           <button
-           onClick={changeTheme}
+           onClick={toggleTheme}
            className="cursor-pointer" 
           >
             {theme === 'dark' ? <FaSun /> : <FaMoon />}

@@ -7,15 +7,16 @@ import OurWork from '../Components/OurWork'
 import HerokuBots from '../Components/HerokuBots'
 import PortFolio from '../Components/PortFolio'
 import Testmonials from '../Components/testmonials'
+
  
  
-const Home = () => {
+const Home = ({theme}) => {
   const { scrollYProgress } = useScroll()
   const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30, restDelta: 0.001 })
 
    
   return (
-    <div className='mt-20 pb-30 overflow-x-hidden'>
+    <div className='mt-20 pb-30 overflow-x-hidden bg-[#060234] light:bg-white'>
       <motion.div
         id='scroll-indicator'
         style={{
