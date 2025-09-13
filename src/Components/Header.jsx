@@ -15,7 +15,7 @@ const Header = () => {
    const { theme, toggleTheme } = useTheme()
 
   return (
-    <div className="top-0 z-20 fixed w-full bg-white dark:bg-[#060234]">
+    <div className={`top-0 z-20 fixed w-full ${theme === 'dark' ? 'bg-[#060234]' : 'bg-white' }`}>
       <div className="flex justify-between gap-1 p-3 backdrop-blur-md bg-opacity-50 text-[#6b57d2] font-bold border-b border-gray-400">
         <div className="flex items-center gap-2 text-xl">
           <img
@@ -31,11 +31,11 @@ const Header = () => {
           <div className="flex flex-col items-center">
           <button
            onClick={toggleTheme}
-           className="cursor-pointer" 
+           className={`cursor-pointer ${theme === 'dark' ? 'text-[white]' : 'text-[#060234]' }`}
           >
             {theme === 'dark' ? <FaSun /> : <FaMoon />}
           </button>
-          <span>
+          <span className={`${theme === 'dark' ? 'text-[white]' : 'text-[#060234]'}`}>
             {theme === 'light' ? "Dark" : "Light"}
           </span>
           </div>
@@ -45,8 +45,8 @@ const Header = () => {
           >
             <span className="absolute inset-0 bg-blue-600 translate-x-[-100%] group-hover:translate-x-0 rounded transition-transform duration-500"></span>
             <span className="flex items-center relative gap-2 text-white group-hover:text-white transition-colors duration-400">
-              <span className="hidden sm:inline">contact us</span>
-              <FaPhone />
+              <span className={`hidden sm:inline ${theme === 'dark' ? 'text-[white]' : 'text-[#060234]'}`}>contact us</span>
+              <span className={`${theme === 'dark' ? 'text-[white]' : 'text-[#060234]'}`}><FaPhone /></span>
             </span>
           </Link>
 
@@ -55,8 +55,8 @@ const Header = () => {
             className={`cursor-pointer box relative px-4  flex items-center font-semibold border border-gray-600 overflow-hidden group rounded-xl`}
           >
             <span className="  absolute inset-0 bg-blue-600 translate-x-[-100%] group-hover:translate-x-0 rounded transition-transform duration-500"></span>
-            <span className="flex  items-center relative gap-2 text-white group-hover:text-white transition-colors duration-400">
-              <FaBars />
+            <span className="flex items-center relative gap-2 text-white group-hover:text-white transition-colors duration-400">
+              <span className={`${theme === 'dark' ? 'text-[white]' : 'text-[#060234]'}`}><FaBars /></span>
             </span>
           </button>
         </div>
