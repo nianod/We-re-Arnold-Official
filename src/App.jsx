@@ -24,7 +24,6 @@ const App = () => {
   return (
     <ThemeProvider>
       <Router>
-         
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
