@@ -33,7 +33,7 @@ const Home = () => {
         }}
       ></motion.div>
       <div>
-        <h1 className="text-white text-xl text-center font-bold">
+        <h1 className={`text-xl text-center font-bold ${theme === 'dark' ? "text-white" : "text-black"}`}>
           HEY,{" "}
           <motion.span
             className="text-white text-xl rounded shadow-md font-bold clips"
@@ -45,7 +45,7 @@ const Home = () => {
             We're Arnold's Tech
           </motion.span>
         </h1>
-        <p className="text-gray-300 text-center">
+        <p className={`text-center ${theme === 'dark' ? "text-gray-300" : "text-gray-800"}`}>
           Your All-in-One Digital Solutions Partner <br />
           <span>
             Software Development | Web Design | Social Media Growth & More

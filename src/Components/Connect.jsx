@@ -22,7 +22,8 @@ const contactSites = [
     Url: "www.linkedin.com/in/arnold-wanza-b51654330",
     icon: <FaLinkedin />,
   },
-  { label: "Twitter", Url: "https://x.com/Itsarnold001", icon: <FaTwitter /> },
+  { label: "Twitter", Url: "https://x.com/Itsarnold001",
+    icon: <FaTwitter /> },
   {
     label: "TikTok",
     Url: "https://www.tiktok.com/@its._arnold_",

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useTheme } from "./Theme";
  
 
 const moreProjects = {
@@ -63,9 +64,11 @@ let handOnProjects = [
     name: "Chat App",
   },
 ];
+
 const OurWork = () => {
 
   const [openId, setOpenId] = useState(null)
+  const theme = useTheme()
 
   const handleToggle = (index) => {
     setOpenId((prevId) => (prevId === index ? null : index))
@@ -74,11 +77,11 @@ const OurWork = () => {
   
   return (
     <>
-      <div data-aos="flip-up" className="flex items-center justify-center flex-col overflow-x-hidden ">
+      <div data-aos={`flip-up" className="flex items-center justify-center flex-col overflow-x-hidden `}>
         <h1 className="text-2xl underline text-green-600 text-center font-bold mt-15">
           Our Featured Projects
         </h1>
-        <div className="grid md:grid-cols-4 sm:grid-cols-1 gap-9 px-3 py-5 ">
+        <div className={`grid md:grid-cols-4 sm:grid-cols-1 gap-9 px-3 py-5 ${theme === "dark" ? "bg-white" : "bg-[#060234]"}`}>
           {handOnProjects.map((item, index) => (
             <div
               key={index}
@@ -122,7 +125,7 @@ const OurWork = () => {
           ))}
         </div>
       </div>
-      <div className="pb-15 flex justify-center mt-10 bg-[#060234]">
+      <div className={`pb-15 flex justify-center mt-10 ${theme === "dark" ? "bg-white" : "bg-[#060234]"}`}>
         <Link to={moreProjects.url} target="_blank">
           <button className="text-[white] px-2 rounded-xl p-[3px] font-bold cursor-pointer beet hover:scale-110 transition-transform duration-200">
             More Projects
